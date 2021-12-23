@@ -31,7 +31,7 @@ public class WebSocketClient {
 
     @OnClose
     public void onClose (Session session, CloseReason closeReason) {
-        System.out.println("[CLIENT]: Session " + session.getId() + " close because " + closeReason);
+        System.out.println("[CLIENT]: Session " + session.getId() + " close, because " + closeReason);
         latch.countDown();
     }
 
