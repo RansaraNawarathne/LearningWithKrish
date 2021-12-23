@@ -26,8 +26,8 @@ public class WebSocketServerEndpoint {
         System.out.println("[SERVER]: Session " + session.getId() + " closed, because " + closeReason);
     }
 
-    @OnError
-    public void onError (Session session, Throwable err ) {
-        System.out.println("[SERVER]: Error!!!!!, Session ID: " + session.getId() + ", " + err.getMessage());
-    }
+//    @OnError
+//    public void onError (Session session, Throwable err ) {
+//        System.out.println("[SERVER]: Error!!!!!, Session ID: " + session.getId() + ", " + err.getMessage());
+//    }
 }
