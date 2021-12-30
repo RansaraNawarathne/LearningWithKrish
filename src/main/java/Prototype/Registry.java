@@ -31,7 +31,7 @@ public class Registry {
         bus.setFuelType("Diesal");
         bus.setNumberOfSeats(32);
 
-        /*vehicles.put(VehicleType.CAR, car);
-        vehicles.put(VehicleType.BUS, bus);*/
+        vehicles.put(VehicleType.CAR, car);
+        vehicles.put(VehicleType.BUS, bus);
     }
 }

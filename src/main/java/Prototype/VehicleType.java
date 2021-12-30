@@ -1,5 +1,6 @@
 package Prototype;
 
-public class VehicleType {
-
+public enum VehicleType {
+    CAR,
+    BUS
 }
