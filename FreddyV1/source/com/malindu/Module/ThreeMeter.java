@@ -7,11 +7,11 @@ public class ThreeMeter extends DistanceHandler {
 	public int calculateHops (HopCounter hopCounter){
 		hopCounter.setHopCount (hopCounter.getHopCount () + 1);
 		hopCounter.setDistance (hopCounter.getDistance () - 3);
-		System.out.println ("Jumped 3m");
 		
 		if (hopCounter.getDistance () <= 0) {
 			return hopCounter.getHopCount();
 		} else {
+			hopCounter.setRestTime (hopCounter.getRestTime () + 2.0);
 			return nextJump.calculateHops (hopCounter);
 		}
 	}

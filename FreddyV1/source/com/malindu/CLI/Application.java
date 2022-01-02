@@ -25,8 +25,14 @@ public class Application {
 		distance = scanner.nextInt ();
 		scanner.close ();
 		
+		if (distance != 0) { 
 		HopCounter hopCounter = new HopCounter (distance);
 		System.out.println ("Hop(s) Count : " + fiveMeter.calculateHops(hopCounter));
+		System.out.println ("Total Rest Time : " + hopCounter.getRestTime () + " second(s).");
+		} else {
+			System.out.println ("Hop(s) Count : 0");
+			System.out.println ("Total Rest Time : 0 seconds");
+		}
 	}
 
 }

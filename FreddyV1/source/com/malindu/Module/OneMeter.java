@@ -7,11 +7,11 @@ public class OneMeter extends DistanceHandler {
 	public int calculateHops (HopCounter hopCounter){
 		hopCounter.setHopCount (hopCounter.getHopCount () + 1);
 		hopCounter.setDistance (hopCounter.getDistance () - 1);
-		System.out.println ("Jumped 1m");
 		
 		if (hopCounter.getDistance () <= 0) {
 			return hopCounter.getHopCount();
 		} else {
+			hopCounter.setRestTime (hopCounter.getRestTime () + 3.5);
 			return nextJump.calculateHops (hopCounter);
 		}
 	}
