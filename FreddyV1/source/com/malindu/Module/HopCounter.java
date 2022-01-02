@@ -4,7 +4,7 @@ public class HopCounter {
 	private int distance;
 	private int hopCount;
 
-	public HopCounter (int disatance) {
+	public HopCounter (int distance) {
 		this.distance = distance;
 	}
 
