@@ -1,0 +1,6 @@
+javac -d ../../../../classes -cp D:\Freddy\FreddyV1\source HopCounter.java FiveMeter.java ThreeMeter.java OneMeter.java
+
+javac -d ../../../../classes -cp D:\Freddy\FreddyV1\source DistanceHandler.java
+
+javac -d ../../../../classes -cp D:\Freddy\FreddyV1\source Application.java
+java -cp D:/Freddy/FreddyV1/classes com.malindu.CLI.Application
